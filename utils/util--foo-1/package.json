@@ -1,0 +1,36 @@
+{
+  "name": "@myscope/util--foo-1",
+  "version": "1.0.0",
+  "description": "this is node project",
+  "main": "dist/main.js",
+  "types": "dist/main.d.ts",
+  "module": "src/main.ts",
+  "license": "ISC",
+  "dependencies": {
+    "core-js": "^3.0.0"
+  },
+  "devDependencies": {
+    "@myscope/heft-config-default-rig": "1.0.0",
+    "@myscope/eslint-config": "0.1.0",
+    "@myscope/prettier-config": "1.0.0",
+    "@rushstack/eslint-patch": "^1.0.6",
+    "@rushstack/heft": "^0.37.0",
+    "@types/heft-jest": "1.0.2",
+    "@types/node": "16.6.1",
+    "typescript": "~4.3.5",
+    "eslint": "~7.32.0",
+    "jest": "^25.5.4",
+    "prettier": "^2.4.1"
+  },
+  "scripts": {
+    "build": "heft build --clean",
+    "build:watch": "heft build",
+    "clean": "heft clean",
+    "test": "heft test",
+    "test:watch": "heft test",
+    "test:parallel": "heft test",
+    "validate-lint": "eslint src --ext=ts",
+    "validate-lint:fix": "npm run validate-lint -- --fix",
+    "validate-type": "heft build --clean"
+  }
+}

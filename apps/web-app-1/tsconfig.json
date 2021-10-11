@@ -1,0 +1,22 @@
+{
+  "extends": "./tsconfig.base-ui.json",
+
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "build"],
+
+  "compilerOptions": {
+    "allowJs": true,
+    "outDir": "dist",
+
+    "declaration": false,
+    "noImplicitAny": false,
+    "strictNullChecks": false
+  },
+
+  "references": [
+    {"path": "../../ui/react-cat-image"},
+    {"path": "../../ui/component-1"},
+    {"path": "../../utils/util--foo-1"}
+  ]
+}
+

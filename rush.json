@@ -124,7 +124,7 @@
    * LTS schedule: https://nodejs.org/en/about/releases/
    * LTS versions: https://nodejs.org/en/download/releases/
    */
-  "nodeSupportedVersionRange": ">=12.13.0 <13.0.0 || >=14.15.0 <15.0.0",
+  "nodeSupportedVersionRange": ">=14.17.3 <15.0.0",
 
   /**
    * Odd-numbered major versions of Node.js are experimental.  Even-numbered releases
@@ -217,7 +217,7 @@
   //     "tools",      // non-shipping projects that are part of the developer toolchain
   //     "prototypes"  // experiments that should mostly be ignored by the review process
   //   ],
-  // 
+  //
   //   /**
   //    * A list of NPM package scopes that will be excluded from review.
   //    * We recommend to exclude TypeScript typings (the "@types" scope), because
@@ -290,7 +290,7 @@
      * your PR branch, and in this situation "rush change" will also automatically invoke "git fetch"
      * to retrieve the latest activity for the remote master branch.
      */
-    // "url": "https://github.com/microsoft/rush-example",
+    "url": "TODO",
 
     /**
      * The default branch name. This tells "rush change" which remote branch to compare against.
@@ -355,7 +355,7 @@
     //    * The folder name for this variant.
     //    */
     //   "variantName": "old-sdk",
-    // 
+    //
     //   /**
     //    * An informative description
     //    */
@@ -394,19 +394,19 @@
     //    * The NPM package name of the project (must match package.json)
     //    */
     //   "packageName": "my-app",
-    // 
+    //
     //   /**
     //    * The path to the project folder, relative to the rush.json config file.
     //    */
     //   "projectFolder": "apps/my-app",
-    // 
+    //
     //   /**
     //    * An optional category for usage in the "browser-approved-packages.json"
     //    * and "nonbrowser-approved-packages.json" files.  The value must be one of the
     //    * strings from the "reviewCategories" defined above.
     //    */
     //   "reviewCategory": "production",
-    // 
+    //
     //   /**
     //    * A list of local projects that appear as devDependencies for this project, but cannot be
     //    * locally linked because it would create a cyclic dependency; instead, the last published
@@ -415,20 +415,20 @@
     //   "cyclicDependencyProjects": [
     //     // "my-toolchain"
     //   ],
-    // 
+    //
     //   /**
     //    * If true, then this project will be ignored by the "rush check" command.
     //    * The default value is false.
     //    */
     //   // "skipRushCheck": false,
-    // 
+    //
     //   /**
     //    * A flag indicating that changes to this project will be published to npm, which affects
     //    * the Rush change and publish workflows. The default value is false.
     //    * NOTE: "versionPolicyName" and "shouldPublish" are alternatives; you cannot specify them both.
     //    */
     //   // "shouldPublish": false,
-    // 
+    //
     //   /**
     //    * Facilitates postprocessing of a project's files prior to publishing.
     //    *
@@ -437,7 +437,7 @@
     //    * must contain its own package.json file, which is typically a build output.
     //    */
     //   // "publishFolder": "temp/publish",
-    // 
+    //
     //   /**
     //    * An optional version policy associated with the project.  Version policies are defined
     //    * in "version-policies.json" file.  See the "rush publish" documentation for more info.
@@ -456,6 +456,51 @@
     //   "packageName": "my-toolchain",
     //   "projectFolder": "tools/my-toolchain",
     //   "reviewCategory": "tools"
-    // }
+    // },
+    //
+    //
+    // ui
+    // -------------------------------------------------------
+    {
+      "packageName": "@myscope/ui--component-1",
+      "projectFolder": "ui/component-1",
+    },
+    {
+      "packageName": "@myscope/ui--react-cat-image",
+      "projectFolder": "ui/react-cat-image",
+    },
+    //
+    // Utils
+    // -------------------------------------------------------
+    {
+      "packageName": "@myscope/util--foo-1",
+      "projectFolder": "utils/util--foo-1",
+    },
+    //
+    // Apps
+    // -------------------------------------------------------
+    {
+      "packageName": "web-app-1",
+      "projectFolder": "apps/web-app-1",
+    },
+    {
+      "packageName": "node-app-1",
+      "projectFolder": "apps/node-app-1",
+    },
+    //
+    // Tools
+    // -------------------------------------------------------
+    {
+      "packageName": "@myscope/eslint-config",
+      "projectFolder": "tools/eslint-config"
+    },
+    {
+      "packageName": "@myscope/prettier-config",
+      "projectFolder": "tools/prettier-config"
+    },
+    {
+      "packageName": "@myscope/heft-config-default-rig",
+      "projectFolder": "tools/heft-config-default-rig",
+    }
   ]
 }

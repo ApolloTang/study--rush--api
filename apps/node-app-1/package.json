@@ -1,0 +1,44 @@
+{
+  "name": "node-app-1",
+  "version": "1.0.0",
+  "description": "this is node application",
+  "private": true,
+  "main": "dist/main.js",
+  "license": "ISC",
+  "engines": {
+    "node": "^14.17.3"
+  },
+  "author": {
+    "name": "Apollo Tang",
+    "email": "tang.apollo@gmail.com"
+  },
+  "dependencies": {
+    "@myscope/util--foo-1": "1.0.0"
+  },
+  "devDependencies": {
+    "@myscope/heft-config-default-rig": "1.0.0",
+    "@myscope/eslint-config": "0.1.0",
+    "@myscope/prettier-config": "1.0.0",
+    "@rushstack/eslint-patch": "^1.0.6",
+    "@rushstack/heft": "^0.37.0",
+    "@types/heft-jest": "1.0.2",
+    "@types/node": "16.6.1",
+    "typescript": "~4.3.5",
+    "eslint": "~7.32.0",
+    "jest": "^25.5.4",
+    "prettier": "^2.4.1",
+    "nodemon": "~2.0.12"
+  },
+  "scripts": {
+    "build": "heft build --clean",
+    "build:watch": "heft build",
+    "clean": "heft clean",
+    "test": "heft test",
+    "test:watch": "heft test",
+    "test:parallel": "heft test",
+    "validate-lint": "eslint src --ext=ts",
+    "validate-lint:fix": "npm run validate-lint -- --fix",
+    "validate-type": "heft build --clean",
+    "dev": "nodemon --watch dist/main.js --exec node dist/main.js"
+  }
+}

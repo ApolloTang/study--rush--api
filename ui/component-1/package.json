@@ -1,0 +1,49 @@
+{
+  "name": "@myscope/ui--component-1",
+  "version": "1.0.0",
+  "description": "this is react ui project",
+  "main": "dist/main.js",
+  "types": "dist/main.d.ts",
+  "module": "src/main.tsx",
+  "license": "ISC",
+  "peerDependencies": {
+    "react": "^17.0.2",
+    "styled-components": "^5.0.1"
+  },
+  "dependencies": {
+    "@myscope/ui--react-cat-image": "1.0.0",
+    "core-js": "^3.0.0"
+  },
+  "devDependencies": {
+    "@myscope/heft-config-default-rig": "1.0.0",
+    "@myscope/eslint-config": "0.1.0",
+    "@myscope/prettier-config": "1.0.0",
+    "@rushstack/eslint-patch": "^1.0.6",
+    "@rushstack/heft": "^0.37.0",
+    "@types/heft-jest": "1.0.2",
+    "@types/node": "16.6.1",
+    "@types/styled-components": "*",
+    "@types/react": "17.0.2",
+    "@types/react-dom": "17.0.2",
+    "@types/jest": "^25.2.3",
+
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/jest-dom": "^5.5.0",
+    "react": "^17.0.2",
+    "styled-components": "^5.0.1",
+    "typescript": "~4.3.5",
+    "eslint": "~7.32.0",
+    "prettier": "^2.4.1"
+  },
+  "scripts": {
+    "build": "heft build --clean",
+    "build:watch": "heft build",
+    "clean": "heft clean",
+    "test": "heft test",
+    "test:watch": "heft test",
+    "test:parallel": "heft test",
+    "validate-lint": "eslint src --ext=ts,tsx",
+    "validate-lint:fix": "npm run validate-lint -- --fix",
+    "validate-type": "heft build --clean"
+  }
+}

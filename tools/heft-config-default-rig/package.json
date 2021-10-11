@@ -1,0 +1,25 @@
+{
+  "name": "@myscope/heft-config-default-rig",
+  "version": "1.0.0",
+  "description": "Rig enable all configuration for heft in one location see: https://rushstack.io/pages/heft/rig_packages/",
+  "license": "MIT",
+  "peerDependencies": {
+    "@rushstack/heft": "^0.37.0"
+  },
+  "dependencies": {
+    "@microsoft/api-extractor": "7.18.7",
+    "@rushstack/heft-jest-plugin": "0.1.24",
+    "eslint": "~7.32.0",
+    "typescript": "~4.3.5",
+    "jest-extended": "^0.11.5"
+  },
+  "devDependencies": {
+    "eslint": "~7.32.0",
+    "@rushstack/eslint-patch": "^1.0.6",
+    "@rushstack/heft": "^0.37.0",
+    "prettier": "^2.4.1"
+  },
+  "scripts": {
+    "build": ""
+  }
+}

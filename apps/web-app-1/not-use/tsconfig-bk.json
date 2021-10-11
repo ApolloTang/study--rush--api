@@ -1,0 +1,22 @@
+{
+  "extends": "./tsconfig.base-ui.json",
+
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "build"],
+
+  "compilerOptions": {
+    "allowJs": true,
+    "outDir": "dist",
+
+    "declaration": false,
+    "noImplicitAny": false,     // TODO technical debt, remove once dependencies are type-safed.
+    "strictNullChecks": false,  // TODO technical debt, remove once dependencies are type-safed.
+  },
+
+  "references": [
+    {"path": "../../ui/react-cat-image"},
+    // {"path": "../../ui/button"},
+    {"path": "../../ui/component-1"}
+  ]
+}
+
