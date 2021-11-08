@@ -445,13 +445,13 @@
     //    */
     //   // "versionPolicyName": ""
     // },
-    // 
+    //
     // {
     //   "packageName": "my-controls",
     //   "projectFolder": "libraries/my-controls",
     //   "reviewCategory": "production"
     // },
-    // 
+    //
     // {
     //   "packageName": "my-toolchain",
     //   "projectFolder": "tools/my-toolchain",
@@ -500,7 +500,11 @@
     },
     {
       "packageName": "@myscope/heft-config-default-rig",
-      "projectFolder": "tools/heft-config-default-rig",
+      "projectFolder": "tools/heft-config-default-rig"
+    },
+    {
+      "packageName": "@myscope/custom-script-for-project",
+      "projectFolder": "tools/custom-script-for-project"
     }
   ]
 }

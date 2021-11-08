@@ -1,0 +1,19 @@
+{
+  "name": "@myscope/custom-script-for-project",
+  "description": "",
+  "version": "0.1.0",
+  "bin": {
+    "custom-script-for-project": "src/index.js"
+  },
+  "keywords": [],
+  "author": "Apollo Tang",
+  "license": "ISC",
+  "Dependencies": {
+  },
+  "devDependencies": {
+  },
+  "scripts": {
+    "build": ""
+  }
+}
+
