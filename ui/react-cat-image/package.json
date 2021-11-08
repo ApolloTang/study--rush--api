@@ -14,9 +14,9 @@
     "core-js": "^3.0.0"
   },
   "devDependencies": {
-    "@myscope/heft-config-default-rig": "1.0.0",
-    "@myscope/eslint-config": "0.1.0",
-    "@myscope/prettier-config": "1.0.0",
+    "@myscope/heft-config-default-rig": "workspace:*",
+    "@myscope/eslint-config": "workspace:*",
+    "@myscope/prettier-config": "workspace:*",
     "@rushstack/eslint-patch": "^1.0.6",
     "@rushstack/heft": "^0.37.0",
     "@types/heft-jest": "1.0.2",

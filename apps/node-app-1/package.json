@@ -13,13 +13,13 @@
     "email": "tang.apollo@gmail.com"
   },
   "dependencies": {
-    "@myscope/util--foo-1": "1.0.0"
+    "@myscope/util--foo-1": "workspace:*"
   },
   "devDependencies": {
-    "@myscope/heft-config-default-rig": "1.0.0",
-    "@myscope/eslint-config": "0.1.0",
-    "@myscope/prettier-config": "1.0.0",
-    "@myscope/custom-script-for-project": "0.1.0",
+    "@myscope/heft-config-default-rig": "workspace:*",
+    "@myscope/eslint-config": "workspace:*",
+    "@myscope/prettier-config": "workspace:*",
+    "@myscope/custom-script-for-project": "workspace:*",
     "@rushstack/eslint-patch": "^1.0.6",
     "@rushstack/heft": "^0.37.0",
     "@types/heft-jest": "1.0.2",
