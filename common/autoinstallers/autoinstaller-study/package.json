@@ -1,0 +1,19 @@
+{
+  "name": "autoinstaller-study",
+  "version": "1.0.0",
+  "private": true,
+  "bin": {
+    "foo1": "./bin/my-command-in-node-modules-bin-1.js",
+    "foo2": "./bin/my-command-in-node-modules-bin-2.js"
+  },
+  "dependencies": {
+    "@microsoft/rush-lib": "^5.47.0",
+    "lint-staged": "^11.0.0",
+    "execa": "^5.0.0"
+
+  },
+  "scripts": {
+    "postinstall": "node post-install-script.js",
+    "foo2": "./bin/my-command-in-node-modules-bin-2.js"
+  }
+}

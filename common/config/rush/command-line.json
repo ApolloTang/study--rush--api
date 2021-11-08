@@ -115,6 +115,14 @@
       "incremental": false,
       "watchForChanges": false,
     },
+    {
+      "name": "mycommand",
+      "commandKind": "global",
+      "summary": "run my custom command",
+      "safeForSimultaneousRushProcesses": true,
+      "autoinstallerName": "autoinstaller-study",
+      "shellCommand": "common/autoinstallers/autoinstaller-study/bin/my-command.js"
+    }
     // {
     //   /**
     //    * (Required) Determines the type of custom command.
