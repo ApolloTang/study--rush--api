@@ -122,7 +122,17 @@
       "safeForSimultaneousRushProcesses": true,
       "autoinstallerName": "autoinstaller-study",
       "shellCommand": "common/autoinstallers/autoinstaller-study/bin/my-command.js"
-    }
+    },
+    {
+      "name": "my-autoinstaller-eg",
+      "commandKind": "global",
+      "summary": "run the command called 'my-autoinstaller-eg'",
+      "safeForSimultaneousRushProcesses": true,
+      "autoinstallerName": "autoinstaller-example",
+      "shellCommand": "node common/autoinstallers/autoinstaller-example/src/my-autoinstaller-eg.js"
+    },
+
+
     // {
     //   /**
     //    * (Required) Determines the type of custom command.
@@ -285,6 +295,16 @@
    * For example, you might define a "--production" parameter for the "rush build" command.
    */
   "parameters": [
+    {
+      "parameterKind": "string",
+      "longName": "--my-string",
+      "description": "A custom string parameter for the \"my-autoinstaller-eg\" custom command",
+      "associatedCommands": ["my-autoinstaller-eg"],
+      "argumentName": "SOME_TEXT",
+      "required": false
+    },
+
+
     // {
     //   /**
     //    * (Required) Determines the type of custom parameter.
