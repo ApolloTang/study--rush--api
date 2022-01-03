@@ -42,6 +42,7 @@
     "validate-type": "heft build --clean",
     "dev": "nodemon --watch dist/main.js --exec node dist/main.js",
     "custom-script": "custom-script-for-project",
-    "custom-script-direct": "node node_modules/@myscope/custom-script-for-project/src/index.js"
+    "custom-script-direct": "node node_modules/@myscope/custom-script-for-project/src/index.js",
+    "script-w-sub-command": "script-w-sub-command"
   }
 }

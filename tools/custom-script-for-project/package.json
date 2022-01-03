@@ -3,7 +3,8 @@
   "description": "",
   "version": "0.1.0",
   "bin": {
-    "custom-script-for-project": "src/index.js"
+    "custom-script-for-project": "src/index.js",
+    "script-w-sub-command": "src/script-w-sub-command.js"
   },
   "keywords": [],
   "author": "Apollo Tang",
@@ -11,6 +12,7 @@
   "Dependencies": {
   },
   "devDependencies": {
+    "yargs": "^17.3.1"
   },
   "scripts": {
     "build": ""
