@@ -102,3 +102,25 @@ However, to pass the argument `--my-string` to the above command, we have to reg
     ...
   ]
 ```
+
+Now you can execute this rush global command with the argument: 
+
+```
+rush my-autoinstaller-eg --my-string this_is_a_string
+```
+
+and the Rush command will pass the flag `--my-string this_is_a_string` shell command execution: 
+
+```
+node common/autoinstallers/autoinstaller-example/src/my-autoinstaller-eg.js --my-string this_is_a_string
+```
+
+Note that currently there are limitations with argument passing -- rush command cannot pass subcommand, it only passes flags. Also, parameters of the same name cannot have a different definition because they are permanently associated with a rush command.
+
+Also note that when someone checks out the repo, they don't have to pnpm install the autoinstaller, Rush will install it behind the scene when the command is called -- it just works. One limitation of installation is it will not install the `bin` field defined in `package.json`.
+
+
+ 
+
+
+ 
